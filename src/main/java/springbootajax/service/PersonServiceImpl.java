@@ -6,6 +6,7 @@ import springbootajax.entity.Person;
 import springbootajax.repository.PersonRepository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class PersonServiceImpl implements PersonService {
@@ -43,5 +44,16 @@ public class PersonServiceImpl implements PersonService {
     public List<Person> getAll() {
         return personRepository.findAll();
     }
+
+    @Override
+    public Person getPersonById(String id) {
+        Optional<Person> byId = personRepository.findById(id);
+        Person person = null;
+        if (byId.isPresent()){
+            person = byId.get();
+        }
+        return person;
+    }
+
 
 }

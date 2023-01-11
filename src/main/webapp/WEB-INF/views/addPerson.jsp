@@ -16,14 +16,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Home</title>
+    <title>Add Person</title>
 </head>
 <body>
 <div class="container">
     <form action="processForm" method="post">
         <div class="form-group">
             <label for="personId">Person id</label>
-            <input type="email" class="form-control" id="personId" aria-describedby="emailHelp" placeholder="Enter person id" name="personId">
+            <input type="number" class="form-control" id="personId" aria-describedby="emailHelp" placeholder="Enter person id" name="personId">
         </div>
         <div class="form-group">
             <label for="firstName">First name</label>
@@ -38,12 +38,8 @@
             <input type="number" class="form-control" id="age" placeholder="Enter age" name="age">
         </div>
         <div class="form-group">
-            <label for="hobbies">Hobbies</label>
-            <input type="text" class="form-control" id="hobbies" placeholder="Enter hobbies" name="hobbies">
-        </div>
-        <div class="form-group">
             <label for="address">Address</label>
-            <input type="text" class="form-control" id="address" placeholder="Enter address" name="address">
+            <input type="text" class="form-control" id="address" placeholder="Enter address 1" name="address">
         </div>
         <div class="container text-center">
             <button type="submit" class="btn btn-success">Add Person</button>

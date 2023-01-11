@@ -1,6 +1,7 @@
 package springbootajax.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.*;
 import springbootajax.entity.Person;
 import springbootajax.service.PersonService;
@@ -8,6 +9,8 @@ import springbootajax.service.PersonService;
 import java.util.List;
 
 @RestController
+//@Component
+//@ResponseBody
 @RequestMapping("/person")
 public class PersonController {
     @Autowired

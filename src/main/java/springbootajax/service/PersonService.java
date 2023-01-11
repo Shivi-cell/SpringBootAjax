@@ -17,4 +17,5 @@ public interface PersonService {
 
     List<Person> getAll();
 
+    Person getPersonById(String id);
 }
